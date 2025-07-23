@@ -1,0 +1,57 @@
+# Test Environment Configuration
+environment:
+  base_url: "https://www.saucedemo.com"
+  timeout: 30000  # milliseconds
+  headless: false
+  browser: "chromium"
+  viewport:
+    width: 1920
+    height: 1080
+
+# Test Users Configuration
+users:
+  standard_user:
+    username: "standard_user"
+    password: "secret_sauce"
+    description: "Standard user with normal functionality"
+  
+  locked_out_user:
+    username: "locked_out_user"
+    password: "secret_sauce"
+    description: "User that has been locked out"
+  
+  problem_user:
+    username: "problem_user"
+    password: "secret_sauce"
+    description: "User with various issues (images, sorting)"
+  
+  performance_glitch_user:
+    username: "performance_glitch_user"
+    password: "secret_sauce"
+    description: "User with performance issues"
+
+# Test Data
+test_data:
+  customer_info:
+    first_name: "John"
+    last_name: "Doe"
+    postal_code: "12345"
+  
+  invalid_credentials:
+    - username: "invalid_user"
+      password: "wrong_password"
+    - username: "standard_user"
+      password: "wrong_password"
+    - username: ""
+      password: ""
+
+# Reporting Configuration
+reporting:
+  screenshots_on_failure: true
+  video_recording: false
+  trace_on_failure: true
+  
+# Logging Configuration
+logging:
+  level: "INFO"
+  format: "{time:YYYY-MM-DD HH:mm:ss} | {level} | {name}:{function}:{line} | {message}" 
