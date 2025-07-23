@@ -278,7 +278,7 @@ The framework should be easy to extend when new features are added to the applic
 ---
 
 **Document Info:**
-- Author: QA Automation Engineer
+- Author: Roy Avrahami - QA Automation TL
 - Version: 1.0
 - Created: Planning Phase
 - Status: Draft - needs approval 
